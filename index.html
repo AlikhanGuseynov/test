@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Allin Order - Effortless Freshness, Delivered.</title> <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+<link type="text/css" rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+    <div id="preloader">
+        <div class="spinner"></div>
+        <span>Allin Order</span>
+    </div>
+
+    <div class="mobile-frame-wrapper">
+        <div class="mobile-frame">
+
+            <header class="app-header">
+                <div class="header-logo">Allin Order</div>
+                </header>
+
+            <main class="app-container">
+
+                <section id="hero" class="hero-section">
+                    <div class="floating-items">
+                        <span class="food-item milk">🥛</span>
+                        <span class="food-item bread">🍞</span>
+                        <span class="food-item egg">🥚</span>
+                        <span class="food-item butter">🧈</span>
+                        <span class="food-item water">💧</span>
+                    </div>
+                    <div class="lottie-hero-container">
+                        <i class="fas fa-shopping-bag fa-4x placeholder-lottie"></i> </div>
+
+                    <h1 class="animated-headline">
+                        <span class="line">No more forgetting milk.</span>
+                        <span class="line">Or eggs. Or bread.</span>
+                        <span class="line"><span class="highlight">We bring it.</span> Weekly.</span>
+                        <span class="line">Monthly. Exactly when</span>
+                        <span class="line">you need it. <span class="relief-text">Ahhh.</span></span>
+                    </h1>
+
+                    <button class="cta-button primary-cta pulse-on-load" data-modal-target="orderModal">Start My Order</button>
+                    <a href="#how-it-works" class="cta-button secondary-cta scroll-link">How It Works <i class="fas fa-chevron-down"></i></a>
+                </section>
+
+                <section id="how-it-works" class="how-it-works-section">
+                    <h2 class="section-title reveal-on-scroll">3 Steps to <span class="highlight">Zero Stress</span></h2>
+                    <div class="steps-container">
+                        <div class="step-card reveal-on-scroll">
+                             <div class="step-number">1</div>
+                            <div class="step-illustration">
+                                <i class="fas fa-hand-pointer fa-3x"></i>
+                                <div class="ai-tooltip">
+                                    <i class="fas fa-robot"></i> AI suggests items!
+                                </div>
+                            </div>
+                            <h3>Pick Essentials</h3>
+                            <p>Choose from fresh organic basics. We remember your favorites.</p>
+                        </div>
+                        <div class="step-card reveal-on-scroll" data-reveal-delay="100">
+                             <div class="step-number">2</div>
+                            <div class="step-illustration">
+                                <i class="fas fa-sync-alt fa-3x"></i>
+                                <div class="toggle-anim"><span>Weekly</span><span>Bi-Weekly</span><span>Monthly</span></div>
+                            </div>
+                            <h3>Set Your Rhythm</h3>
+                            <p>Weekly, monthly, or custom. Adjust anytime. Pause easily.</p>
+                        </div>
+                        <div class="step-card reveal-on-scroll" data-reveal-delay="200">
+                             <div class="step-number">3</div>
+                             <div class="step-illustration">
+                                <i class="fas fa-door-open fa-3x"></i>
+                                </div>
+                            <h3>Open Your Door</h3>
+                            <p>Freshness arrives right on time. Every morning. Pure relief.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="ai-suggestions" class="ai-suggestions-section">
+                    <h2 class="section-title reveal-on-scroll">Let AI do the <span class="highlight">thinking</span>.</h2>
+                    <div class="auto-text-cycle reveal-on-scroll">
+                        <p>Loading suggestions...</p>
+                    </div>
+                    <div class="suggested-packs reveal-on-scroll">
+                        <div class="mini-pack-card"><span>Milk</span><span>Bread</span><span>Eggs</span></div>
+                        <div class="mini-pack-card"><span>Butter</span><span>Cheese</span><span>Water</span></div>
+                        <div class="mini-pack-card"><span>Milk</span><span>Yogurt</span><span>Water</span></div>
+                    </div>
+                    <button class="cta-button ai-cta reveal-on-scroll" data-modal-target="orderModal" data-ai-build="true"><i class="fas fa-magic"></i> Auto-Pack Me</button>
+                </section>
+
+                <section id="featured-essentials" class="featured-essentials-section">
+                     <h2 class="section-title reveal-on-scroll">Fresh Essentials</h2>
+                     <div class="product-carousel">
+                        <div class="product-card reveal-on-scroll">
+                            <div class="product-image-wrapper"><img src="placeholder-milk.png" alt="Milk"></div>
+                            <span>Milk 🥛</span>
+                            <button class="add-to-pack-btn" data-product="Milk" data-modal-target="quantityModal" aria-label="Add Milk to pack">+</button>
+                        </div>
+                         <div class="product-card reveal-on-scroll" data-reveal-delay="50">
+                            <div class="product-image-wrapper"><img src="placeholder-eggs.png" alt="Eggs"></div>
+                            <span>Eggs 🥚</span>
+                            <button class="add-to-pack-btn" data-product="Eggs" data-modal-target="quantityModal" aria-label="Add Eggs to pack">+</button>
+                        </div>
+                         <div class="product-card reveal-on-scroll" data-reveal-delay="100">
+                            <div class="product-image-wrapper"><img src="placeholder-bread.png" alt="Bread"></div>
+                            <span>Bread 🍞</span>
+                             <button class="add-to-pack-btn" data-product="Bread" data-modal-target="quantityModal" aria-label="Add Bread to pack">+</button>
+                        </div>
+                         <div class="product-card reveal-on-scroll" data-reveal-delay="150">
+                             <div class="product-image-wrapper"><img src="placeholder-cheese.png" alt="Cottage Cheese"></div>
+                            <span>Cottage Cheese 🧀</span>
+                            <button class="add-to-pack-btn" data-product="Cottage Cheese" data-modal-target="quantityModal" aria-label="Add Cottage Cheese to pack">+</button>
+                        </div>
+                        <div class="product-card reveal-on-scroll" data-reveal-delay="200">
+                             <div class="product-image-wrapper"><img src="placeholder-sourcream.png" alt="Sour Cream"></div>
+                            <span>Sour Cream 🥄</span>
+                            <button class="add-to-pack-btn" data-product="Sour Cream" data-modal-target="quantityModal" aria-label="Add Sour Cream to pack">+</button>
+                        </div>
+                         <div class="product-card reveal-on-scroll" data-reveal-delay="250">
+                             <div class="product-image-wrapper"><img src="placeholder-water.png" alt="Water"></div>
+                            <span>Water 💧</span>
+                             <button class="add-to-pack-btn" data-product="Water" data-modal-target="quantityModal" aria-label="Add Water to pack">+</button>
+                        </div>
+                        <div class="product-card reveal-on-scroll" data-reveal-delay="300">
+                             <div class="product-image-wrapper"><img src="placeholder-butter.png" alt="Organic Butter"></div>
+                            <span>Organic Butter 🧈</span>
+                             <button class="add-to-pack-btn" data-product="Organic Butter" data-modal-target="quantityModal" aria-label="Add Organic Butter to pack">+</button>
+                        </div>
+                     </div>
+                </section>
+
+                <section id="pricing" class="pricing-section">
+                    <h2 class="section-title reveal-on-scroll">Simple, Smart Plans</h2>
+                    <div class="toggle-container reveal-on-scroll">
+                         <div class="toggle-switch">
+                            <button class="toggle-btn active" data-plan="weekly">Weekly</button>
+                            <button class="toggle-btn" data-plan="monthly">Monthly</button>
+                            <button class="toggle-btn" data-plan="custom">Custom</button>
+                            <span class="toggle-indicator"></span>
+                         </div>
+                    </div>
+                    <div class="plan-cards-container">
+                        <div class="plan-card weekly-plan reveal-on-scroll">
+                            <span class="plan-badge">Popular</span>
+                            <h3>Basic Pack</h3>
+                            <p class="price">$19<span>/week</span></p>
+                            <ul><li>Milk, Eggs, Bread</li><li>Weekly Delivery</li></ul>
+                            <button class="cta-button plan-cta" data-modal-target="orderModal" data-plan-name="Basic Pack">Start with this</button>
+                        </div>
+                         <div class="plan-card weekly-plan smart-ai-plan reveal-on-scroll" data-reveal-delay="100">
+                             <span class="plan-badge ai-badge"><i class="fas fa-robot"></i> Smart</span>
+                            <h3>Smart AI Pack</h3>
+                             <p class="price">$30<span>/week</span></p>
+                             <ul><li>AI Suggested Items</li><li>Smart Frequency</li></ul>
+                            <button class="cta-button plan-cta" data-modal-target="orderModal" data-plan-name="Smart AI Pack">Try AI Pack</button>
+                        </div>
+                         <div class="plan-card weekly-plan reveal-on-scroll" data-reveal-delay="200">
+                            <h3>Family Pack</h3>
+                            <p class="price">$45<span>/week</span></p>
+                             <ul><li>Milk x2, Eggs x2, Bread, Butter, Cheese</li><li>Weekly Delivery</li></ul>
+                            <button class="cta-button plan-cta" data-modal-target="orderModal" data-plan-name="Family Pack">Choose Family</button>
+                        </div>
+
+                        <div class="plan-card monthly-plan" style="display: none;">
+                             <span class="plan-badge">Save ~10%</span>
+                            <h3>Basic Pack</h3>
+                            <p class="price">$70<span>/month</span></p>
+                             <ul><li>Milk, Eggs, Bread</li><li>Monthly Delivery</li></ul>
+                            <button class="cta-button plan-cta" data-modal-target="orderModal" data-plan-name="Basic Pack Monthly">Start Monthly</button>
+                        </div>
+                         <div class="plan-card monthly-plan smart-ai-plan" style="display: none;">
+                             <span class="plan-badge ai-badge"><i class="fas fa-robot"></i> Smart</span>
+                             <h3>Smart AI Pack</h3>
+                             <p class="price">$110<span>/month</span></p>
+                             <ul><li>AI Suggested Items</li><li>Smart Frequency</li></ul>
+                            <button class="cta-button plan-cta" data-modal-target="orderModal" data-plan-name="Smart AI Pack Monthly">Try AI Monthly</button>
+                        </div>
+                        <div class="plan-card monthly-plan" style="display: none;">
+                             <h3>Family Pack</h3>
+                            <p class="price">$160<span>/month</span></p>
+                             <ul><li>Milk x2, Eggs x2, Bread, Butter, Cheese</li><li>Monthly Delivery</li></ul>
+                            <button class="cta-button plan-cta" data-modal-target="orderModal" data-plan-name="Family Pack Monthly">Choose Family Monthly</button>
+                        </div>
+
+                        <div class="plan-card custom-plan" style="display: none;">
+                            <h3>Custom Pack</h3>
+                            <p class="price">You Decide!</p>
+                             <ul><li>Pick any items</li><li>Set your schedule</li></ul>
+                            <button class="cta-button plan-cta" data-modal-target="orderModal" data-plan-name="Custom Pack">Build Your Own</button>
+                        </div>
+                    </div>
+                </section>
+
+                 <section id="value-props" class="value-props-section">
+                     <div class="value-item reveal-on-scroll">
+                         <div class="value-icon-wrapper"><i class="fas fa-clock fa-2x"></i></div>
+                        <h4>Time Saved</h4>
+                        <p>Never think about essentials again.</p>
+                    </div>
+                     <div class="value-item reveal-on-scroll" data-reveal-delay="100">
+                         <div class="value-icon-wrapper"><i class="fas fa-leaf fa-2x"></i></div>
+                        <h4>Organic Sources</h4>
+                        <p>Freshness from trusted local farms.</p>
+                    </div>
+                     <div class="value-item reveal-on-scroll" data-reveal-delay="200">
+                         <div class="value-icon-wrapper"><i class="fas fa-brain fa-2x"></i></div>
+                        <h4>AI-Powered</h4>
+                        <p>Smart packs, zero decision fatigue.</p>
+                    </div>
+                </section>
+
+                 <section class="final-cta-section">
+                    <h2 class="section-title reveal-on-scroll">Ready for Effortless Mornings?</h2>
+                    <p class="reveal-on-scroll" data-reveal-delay="100">Stop thinking, start living. Let us handle the basics.</p>
+                    <button class="cta-button primary-cta large-cta reveal-on-scroll" data-reveal-delay="200" data-modal-target="orderModal"><i class="fas fa-check-circle"></i> Yes, Subscribe Now!</button>
+                 </section>
+
+
+            </main> <footer class="app-footer">
+                  <div class="footer-bg-icons">
+                      <span>🥛</span><span>🍞</span><span>🥚</span><span>💧</span><span>🧈</span><span>🧀</span>
+                  </div>
+                 <nav class="footer-nav">
+                    <a href="#hero" class="active scroll-link" aria-label="Home"><i class="fas fa-home"></i></a>
+                    <a href="#featured-essentials" class="scroll-link" aria-label="Products"><i class="fas fa-shopping-basket"></i></a>
+                    <a href="#pricing" class="scroll-link" aria-label="Subscribe"><i class="fas fa-tags"></i></a>
+                    <a href="#" aria-label="Support"><i class="fas fa-question-circle"></i></a>
+                 </nav>
+                 <div class="footer-actions">
+                     <div class="language-toggle">
+                        <button class="lang-btn active">EN</button> |
+                        <button class="lang-btn">AZ</button> |
+                        <button class="lang-btn">ES</button>
+                    </div>
+                    </div>
+            </footer>
+
+
+        </div> </div> <div class="modal-overlay" id="modalOverlay"></div>
+
+    <div class="modal" id="orderModal">
+        <button class="close-modal-btn" aria-label="Close modal">&times;</button>
+        <h2 id="modalTitle">Build Your Pack</h2>
+        <div class="modal-content">
+            <div class="modal-step pack-builder active-step">
+                <h4>Your Essentials:</h4>
+                <ul class="selected-items-list">
+                    <p class="empty-pack-message">Your pack is empty. Add items below!</p>
+                </ul>
+                 <button class="add-more-items-btn scroll-link" href="#featured-essentials"><i class="fas fa-plus-circle"></i> Browse & Add Items</button>
+                <hr>
+                <div class="modal-actions">
+                     <button class="cta-button next-step-btn">Next: Delivery <i class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+
+            <div class="modal-step calendar-selector">
+                 <h4>Delivery Rhythm:</h4>
+                 <select id="deliveryFrequency">
+                     <option value="weekly">Weekly</option>
+                     <option value="bi-weekly">Every 2 Weeks</option>
+                     <option value="monthly">Monthly</option>
+                     </select>
+                 <p class="delivery-info">First delivery estimate: <span id="firstDeliveryDate">[Date calculated by JS]</span></p>
+                 <hr>
+                 <div class="modal-actions">
+                    <button class="cta-button prev-step-btn"><i class="fas fa-arrow-left"></i> Back</button>
+                    <button class="cta-button next-step-btn">Next: Confirm <i class="fas fa-arrow-right"></i></button>
+                 </div>
+             </div>
+
+            <div class="modal-step checkout-preview">
+                 <h4>Order Summary</h4>
+                 <div class="summary-details">
+                     <p>Items: <span id="summaryItemsCount">0</span></p>
+                     <p>Frequency: <span id="summaryFrequency">Weekly</span></p>
+                     <p>Est. Next Delivery: <span id="summaryNextDelivery">[Date]</span></p>
+                 </div>
+                 <p class="summary-total">Total: <span class="total-price">$0.00</span> <span class="price-frequency">/ week</span></p>
+                 <p class="checkout-notice">You can adjust or pause anytime.</p>
+                 <hr>
+                <div class="modal-actions">
+                    <button class="cta-button prev-step-btn"><i class="fas fa-arrow-left"></i> Back</button>
+                     <button class="cta-button checkout-btn primary-cta"><i class="fas fa-check-circle"></i> Confirm & Subscribe</button>
+                 </div>
+             </div>
+        </div>
+    </div>
+
+     <div class="toast-notification" id="quantityToast">
+        <span id="toastMessage">Item added!</span>
+    </div>
+
+
+    <script src="script.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
