@@ -463,8 +463,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const buttonWidth = button.offsetWidth;
                 const indicatorOffset = button.offsetLeft - toggleContainer.offsetLeft - 5; // Adjust for padding
                 toggleIndicator.style.width = `${button.offsetWidth}px`;
-                toggleIndicator.style.transform = `translateX(${button.offsetLeft - toggleContainer.offsetLeft}px)`;
-
+                toggleIndicator.style.transform = `translateX(${button.offsetLeft - toggleContainer.offsetLeft + 38}px)`;
 
                 const planType = button.dataset.plan; // 'weekly', 'monthly', 'custom'
 
@@ -493,7 +492,7 @@ document.addEventListener('DOMContentLoaded', () => {
          const activeButton = toggleContainer.querySelector('.toggle-btn.active');
          if(activeButton) {
               toggleIndicator.style.width = `${activeButton.offsetWidth}px`;
-              toggleIndicator.style.transform = `translateX(${activeButton.offsetLeft - toggleContainer.offsetLeft}px)`;
+              toggleIndicator.style.transform = `translateX(${activeButton.offsetLeft - toggleContainer.offsetLeft + 38}px)`;
          }
     }
     // Add keyframes for plan fade in/out
