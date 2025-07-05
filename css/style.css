@@ -363,7 +363,7 @@ hr {
 }
 
 .animated-headline {
-    font-size: clamp(1.8em, 6vw, 2.5em); /* Responsive font size */
+    font-size: 32px; /* Responsive font size */
     font-weight: 700;
     line-height: 1.3;
     margin-bottom: 35px;
@@ -509,6 +509,7 @@ hr {
 
 .lottie-hero-container img {
     width: 300px;
+    scale: 1.7;
 }
 
 .placeholder-lottie {
